@@ -23,7 +23,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     /* height: 100vh; */
-    margin: 100px;
     width: 100vw;
     
 
@@ -77,7 +76,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 300px;
-    ;
+    flex-wrap: wrap;
 }
 .message{
     display: flex;
@@ -89,13 +88,21 @@ body{
 }
 .img{
     display: flex;
-    flex-direction: 100%;
 margin-top: 50px;
-margin: 50px;
-height: 400px;
+/* margin: 50px; */
+justify-content: space-between;
 }
-div img{
-    margin: 20px;
+/* div img{
+    margin: 350px;
+} */
+.img div{
+    width: 300px;
+    flex-basis: 30%
+
+}
+.img img{
+    min-height: 200px;
+    max-height: 500px;
 }
 .contenaire0{
     width: 90%;
@@ -103,5 +110,102 @@ div img{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(50, 205, 78);
-    
+    margin: 20px auto;
+}
+@media screen and (max-width: 740px){ 
+.contenaire0 {
+   display: block; 
+   position: static;
+   padding: 20px;
+   margin-bottom: 2%;
+}
+.contenaire{
+    display: block; 
+   position: static;
+   padding: 20px;
+   margin-bottom: 2%;
+   width: 40px;
+}
+.doro{
+    display: block; 
+   position: static;
+   padding: 20px;
+   margin-bottom: 2%;
+   width: 40px;
+}
+.col-3{
+    display: block; 
+   position: static;
+   padding: 20px;
+   margin-bottom: 2%;
+   width:40px;
+}
+.col-3{
+    display: block; 
+   position: static;
+   padding: 20px;
+   margin-bottom: 2%;
+   width:40px;
+}
+.abc{
+    display: block; 
+   position: static;
+   padding: 20px;
+   margin-bottom: 2%;
+   width:40px;
+}
+.message{
+    display: block; 
+   position: static;
+   padding: 20px;
+   margin-bottom: 2%;
+   width:40px ;
+ }
+ .img{
+     flex-direction: column;
+ }
+}
+ @media screen and(max-width:400px) {
+    .contenaire0 {
+        display: block; 
+        position: static;
+        padding: 10px;
+        margin-bottom: 1%;
+        width: 20px; 
+     } 
+     .contenaire{
+        display: block; 
+       position: static;
+       padding: 10px;
+       margin-bottom: 1%;
+       width: 20px;
+    }
+    .doro{
+        display: block; 
+       position: static;
+       padding: 10px;
+       margin-bottom: 1%;
+       width: 20px;
+    }
+    .col-3{
+        display: block; 
+       position: static;
+       padding: 10px;
+       margin-bottom: 1%;
+       width:20px;
+    }
+    .abc{
+        display: block; 
+       position: static;
+       padding: 10px;
+       margin-bottom: 1%;
+       width:20px;
+    }
+    .message{
+        display: block; 
+       position: static;
+       padding: 10px;
+       margin-bottom: 1%;
+       width:20px ;
+     }
 }
